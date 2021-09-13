@@ -10,7 +10,7 @@ function CreateArea(props) {
     function handleAdd(event){
         event.preventDefault();
         props.onAdd(note);
-        console.log("adsdfgffdsa");
+        // console.log("adsdfgffdsa");
 
         setNote({
             title:"",
@@ -26,7 +26,7 @@ function CreateArea(props) {
                  [name]: value
              }
         })
-        console.log("adsdfgffdsa");
+        // console.log("adsdfgffdsa");
     }    
   return (
     <div>

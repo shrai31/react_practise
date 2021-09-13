@@ -14,18 +14,26 @@ function App() {
           })
     }
     function deleteNote(id){
-        setNotes(prev =>{
-            prev.filter((noteItem, index)=>{
-                return index !== id;
-            })
-        })
+      console.log("id",id);
+      console.log("thisi is notes:",notes)
+      setNotes(notes.filter((data,index)=>{
+        return index !== id
+      }))
+        // setNotes(prev =>{
+        //     prev.filter((noteItem, index)=>{
+        //       console.log("index111",index);
+        //         return index !== id;
+        //       })
+        //       console.log("previous value",prev);
+        // })
     }
+    console.log("sfhdgfhgjhk")
 
   return (
     <div>
       <Header />
       <CreateArea onAdd={addNote}/>
-      {notes.map((noteItem, index) => {
+      {notes?.map((noteItem, index) => {
         return (
           <Note
             key={index}
