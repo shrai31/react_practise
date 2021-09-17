@@ -1,0 +1,90 @@
+.searchInputs {
+  margin-top: 105px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 425px;
+}
+
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.dataResult {
+  width: 500px;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  background-color: white;
+  border: 1px black solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: scroll;
+  margin-top: 1rem;
+}
+
+.dataResult::-webkit-scrollbar {
+  /* display: flex; */
+  -webkit-text-fill-color: yellow !important;
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: yellow !important;
+}
+
+
+.dataResult .dataItem {
+  width: 100%;
+  height: auto;
+  display: auto;
+  align-items: center;
+  color: black;
+}
+
+.dataResult .dataItemBlank {
+  width: 100%;
+  height: 60px;
+  display: auto;
+  text-align: center;
+  padding: 70px 0;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgrey;
+}
+.hover:hover {
+  background:rgb(245, 245, 187);
+  /* scroll-behavior: smooth; */
+}
+
+#clearBtn {
+  cursor: pointer;
+}
